@@ -1,0 +1,175 @@
+/* --------------------------------------- general  ---------------------------------------*/
+
+html {
+  font-size: 16px;
+}
+* {
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  background: url(../public/imgs/background.png) no-repeat center center fixed;
+  background-size: cover;
+}
+
+li {
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+ul {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: gold;
+}
+
+/* --------------------------------------- general  ---------------------------------------*/
+
+/* --------------------------------------- Header  ---------------------------------------*/
+
+.headerSection {
+  display: flex;
+  align-items: center;
+}
+
+.headerSection a {
+  width: 40%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  border-bottom: white solid 2px;
+  background-color: black;
+  height: 10vh;
+}
+
+.headerLogo {
+  width: 90%;
+}
+
+.logoTitle {
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: gold;
+}
+
+nav {
+  align-items: center;
+  justify-content: center;
+  margin-right: 5%;
+  color: white;
+  font-size: 1.3rem;
+}
+
+nav li:hover {
+  color: gold;
+  text-decoration: none;
+  cursor: pointer;
+  text-shadow: 0 0 7px gold, 0 0 10px gold, 0 0 21px gold, 0 0 42px yellow,
+    0 0 82px yellow, 0 0 92px yellow, 0 0 102px yellow, 0 0 151px yellow;
+}
+
+.navToggle {
+  display: none;
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  height: 50px;
+  width: 50px;
+}
+
+@media screen and (max-width: 765px) {
+  nav ul {
+    display: none;
+  }
+  .navToggle {
+    display: flex;
+  }
+}
+
+/* --------------------------------------- Header  ---------------------------------------*/
+
+/* --------------------------------------- Main  ---------------------------------------*/
+
+.main {
+  height: 80vh;
+}
+
+.mint {
+  background-color: rgba(255, 255, 255, 0);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid rgba(255, 255, 255, 0);
+  height: 31vh;
+  width: 31vh;
+  border-radius: 50%;
+  color: gold;
+  text-decoration: none;
+  cursor: pointer;
+}
+button:hover {
+  box-shadow: 0 0 7px gold, 0 0 10px gold, 0 0 21px gold, 0 0 42px yellow,
+    0 0 82px yellow, 0 0 92px yellow, 0 0 102px yellow, 0 0 151px yellow;
+}
+
+.backdrop {
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+/* --------------------------------------- Main  ---------------------------------------*/
+
+/* --------------------------------------- footer  ---------------------------------------*/
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  border-top: white solid 3px;
+  background-color: black;
+  height: 10vh;
+}
+
+.icon {
+  height: 40px;
+  width: 40px;
+}
+
+.footerText {
+  color: white;
+}
+
+.footerText li {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1056px) {
+  .footerText {
+    display: none;
+  }
+}
+/* --------------------------------------- footer  ---------------------------------------*/
